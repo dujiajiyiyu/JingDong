@@ -23,6 +23,7 @@ public class ConnUtil {
             return DriverManager.getConnection(URL, USER, PWD);
         } catch (ClassNotFoundException | SQLException e) {
             e.printStackTrace();
+            System.out.println("sss");
         }
         return null ;
     }
